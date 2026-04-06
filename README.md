@@ -37,3 +37,34 @@ It ensures reliability, reduces manual work, and improves recovery readiness in 
 ---
 
 ## 📂 Project Structure
+backupconfig/
+│
+├── devicess.txt # List of device IPs
+├── backup/ # Backup results (auto-created)
+├── backup_log_YYYY-MM-DD.txt
+└── backup_script.py # Main script
+
+
+---
+
+## ⚙️ How It Works
+
+1. User inputs username & password securely
+2. Script reads device IP list from file
+3. Each device is checked via ping
+4. SSH connection is established using Netmiko
+5. Device configuration is retrieved
+6. Backup is saved in RTF format (timestamped)
+7. Result is logged (success / failure)
+
+---
+
+## ▶️ Usage
+
+1. Install dependencies:
+
+```bash
+pip install netmiko
+
+
+
