@@ -1,3 +1,4 @@
+![alt text](https://github.com/ZakiMubarok95/network-backup-automation/blob/main/summary%20backup.png?raw=true)
 # 🔧 Network Configuration Backup Automation
 
 Automation script for backing up network device configurations (HPE Comware) using Python and SSH.
